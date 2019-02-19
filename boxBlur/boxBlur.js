@@ -1,5 +1,4 @@
 function boxBlur(image) {
-  debugger;
   const newImage = [];
   for (let i = 1; i < image.length - 1; i++) {
     const line = [];

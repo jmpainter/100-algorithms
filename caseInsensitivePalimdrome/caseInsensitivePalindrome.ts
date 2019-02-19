@@ -1,5 +1,5 @@
-function isCaseInsensitivePalindrome(inputString: string): boolean {
-
+function isCaseInsensitivePalindrome(string) {
+  return string.toLowerCase() === string.split('').reverse().join('').toLowerCase();
 }
 
 console.log(isCaseInsensitivePalindrome('AaBaa'));
