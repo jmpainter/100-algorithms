@@ -13,5 +13,23 @@ function convertString(s, t) {
   return true;
 }
 
+function convertString2(s, t) {
+  let word = '';
+  let counter = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (s.charAt(i) === t.charAt(counter)) {
+      word += s.charAt(i);
+      counter++;
+    }
+    if (word === t) {
+      return true;
+    }
+  }
+  return false;
+}
+
 console.log(convertString('ceoydefthf5iyg5h5yts', 'codefights'));
 console.log(convertString('addbyca', 'abcd'));
+
+console.log(convertString2('ceoydefthf5iyg5h5yts', 'codefights'));
+console.log(convertString2('addbyca', 'abcd'));
