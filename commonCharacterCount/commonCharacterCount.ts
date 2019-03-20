@@ -1,5 +1,3 @@
-function commonCharacterCount(s1: string, s2: string): number {
-   
-}
+function commonCharacterCount(s1, s2) {}
 
 console.log(commonCharacterCount('aabcc', 'adcaa'));
